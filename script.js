@@ -48,6 +48,9 @@ function generatePassword() {
     updatePasswordIndicator();
 }
 
+// Call generatePassword to set an initial password
+generatePassword();
+
 elements.generateBtn.addEventListener("click", generatePassword);
 
 function updatePasswordIndicator() {
@@ -70,6 +73,6 @@ function copyToClipboard() {
 
         setTimeout(() => {
             elements.copyBtn.innerHTML = "content_copy";
-        }, 3000);
+        }, 1000);
     }
 }
